@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.divs{
+			width: 600px;
+			height: 600px;
+			margin: auto;
+			margin-top: 50px;
+			border: 1px solid greenyellow;
+			background-color:rgba(100,100,100,0.1) ;
+			position: fixed;
+			left: 500px;
+			top: 50px;
+			
+		}
+		.divs>h3{
+			text-align: center;
+			line-height: 200%;
+			margin-top: 50px;
+			font-family: "微软雅黑";
+		}
+		.divs>p{
+			line-height: 300%;
+			color: darksalmon;
+			font-family: "微软雅黑";
+			text-align: center;
+		}
+		/*.box{
+			position: relative;
+		}*/
+		.box>img{
+			/*height: auto;*/
+			width: auto;
+			width: 100%;
+		}			
+		</style>
+	</head>
+	<body>
+		<div id="box" class="box">
+			<img src="https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E7%99%BE%E5%BA%A6%E5%9B%BE%E7%89%87&hs=2&pn=1&spn=0&di=118635396880&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=2317499888%2C864114656&os=2102777477%2C2580316240&simid=3325931789%2C372036180&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=%E7%99%BE%E5%BA%A6%E5%9B%BE%E7%89%87&objurl=http%3A%2F%2Fimg.hb.aicdn.com%2F761f1bce319b745e663fed957606b4b5d167b9bff70a-nfBc9N_fw580&fromurl=ippr_z2C%24qAzdH3FAzdH3Fi7wkwg_z%26e3Bv54AzdH3FrtgfAzdH3Fl08a0988AzdH3F%3F41%3Diw58dnrtvqtpw&gsm=0"/>
+			<div class="divs">
+				<h3>函数的原型和原型链</h3>
+				<p>no1.它分为构造函数以及原型对象和实例对象</p>
+				<p>no2.构造函数是new关键字后面的函数以及它的首字母必须大写</p>
+				<p>no3.构造函数的特点如下：new关键字调用、this指向构造出的新对象它可以将属性和方法直接赋值给this、默认不用return返回值</p>
+				<h3>原型对象和实例对象</h3>
+				<p>no1.A的原型是B--那么B的原型是Object--Object的原型是null</p>
+				<p>no2._ _proto_ _说的是原型指针、prototype说的是原型对象</p>
+				<p></p>
+			</div>
+		</div>
+	</body>
+</html>
