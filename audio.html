@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style>
+	
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.divs{
+			width: 1000px;
+			margin: 0 auto;
+			background: mistyrose;
+		}
+		.divs>p{
+			color: red;
+			font: "微软雅黑";
+			font-size: 17px;
+			margin-top: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="divs">
+		<p style="color: azure;font-size: 20px;padding-top:20px ;">2017/1/20的总结</p>
+		<p>音乐的播放分为3大模块</p>
+		<p>播放、暂停|上一曲、下一曲|播放模式切换|进度（音乐、缓存、拖放）|音量调节|歌词|列表选择</p>
+		<p>首先确定两个时间。第一：全部时长总长度是audio.duration;2:audio.currentTime表示当前播放过的时间</p>
+		<p>setInterval定时器   settimeout延时器		vedio loop单曲循环	autoplay自动播放</p>
+		<p>audio src为规定音频的播放路径</p>
+		<p>controls poster 	视频的预览图片</p>
+		<p>切换歌曲	var index = 0; src = song[index]</p>
+		<p style="padding-bottom: 20px;">单曲循环	audio.loop = true 	用定时器来确定歌曲是否进入下一首</p>
+		
+		
+	</div>
+	
+	
+	
+	
+</body>		
+</html>
