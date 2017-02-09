@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>关于jQuery中DOM的操作</title>
+		
+	</head>
+	<body>
+		<div>
+			<p>简之,DOM的全称是（Document Object Model）文档对象模型</p>
+			<p>当前3种通用的编程语言(Java，JavaScript，JScript)可以操作HTML和XML</p>
+			<p>W3C DOM/HTML DOM是国际通用DOM，IE使用MICROSOFT DOM</p>
+			<p>innerHTML符合W3C的标准，innertext只适用于IE，value只适用于input</p>
+			<p>一</p>
+			<p>attr()方法设置或返回被选元素的属性
+				<br />$(selector).attr(attribute)
+			</p>
+			<p>remove attr()方法删除特定的属性</p>
+			<p>二关于jQuery中html()，text()，val()的使用</p>
+			<p>html()方法当使用该方法返回一个值时，它会返回第一个匹配元素的内容
+				<br />$(selector).html(content)
+				使用函数来设置所有匹配元素的内容。
+				<br />$(selector).html(function(index,oldcontent))
+    				<br/>index - 可选。接收选择器的 index 位置。
+    				<br/>oldcontent - 可选。接收选择器的当前内容。
+			</p>
+			<p>$(A).append(B)将B追加到A当中</p>
+			<p>$(需要添加的内容).appendTo("showDiv")将需要添加的内容加到showDiv中</p>
+			<p>三empty和remove的区别</p>
+			<p>empty是将指定元素中子元素(包括文本节点)删除,remove是从DOM中删除，而不会保留其所占的位置
+				<br />
+							<br/>p Hello /p
+							<br/>World
+							<br/>p welcome /p
+							执行$("p").empty()其结果是
+							<br/>p /p
+							<br/>World
+							<br/>p /p
+			<br />执行$("p").remove()其结果是
+							<br/>World
+			</p>
+			<p>四关于jQuery中CSS的设置</p>
+			<p>$().css(name,value)中
+				<br />中name是 	必需。规定 CSS 属性的名称。该参数可包含任何 CSS 属性，比如 "color"。
+				<br />中value是 可选。规定 CSS 属性的值。该参数可包含任何 CSS 属性值，比如 "red"。
+
+如果设置了空字符串值，则从元素中删除指定属性。
+			</p>
+			<p>$().css(name,function(index,value))中
+				<br />index - 可选。接受选择器的 index 位置    				
+    			<br/>oldvalue - 可选。接受 CSS 属性的当前值
+    			设置多个值时用大括号隔开    			
+			</p>
+			<p>window.onscroll指的是滚动条事件</p>
+		</div>
+	</body>
+</html>
