@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<title></title>
+				
+	</head>
+	<script src="js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+  </div>
+				<p>Ajax又叫异步请求服务器，为了兼容性，需要输入一段代码var xhr = new XMLHttpRequest();
+					if (!xhr){
+					xhr = new ActiveXObject("microsoft XMLHTTP")
+					}</p>
+				<p>
+					load方法通过AJAX请求从服务器加载数据，然后将返回的数据放到指定的元素当中。
+				</p>
+				<p>
+					get方法是一个简单的GET请求功能以取代复杂的$ajax，请求成功时调用回调函数。具体的方法是$.get()。
+				</p>
+				<p>
+					<br/>$(function(){
+			<br/>url:"...",
+			<br/>type:"GET",
+			<br/>dataType:"html",
+			<br/>success:function(msg){
+				<br/>console.log("服务器返回成功");
+				<br/>console.log("msg");
+			},
+			<br/>error:function(error){
+				<br/>console.log("服务器返回失败");
+				<br/>sconsole.log("error");
+			}
+		})
+				</p>
+				<p>在处理$.ajax()得到的数据，则需要使用回调函数</p>
+				<p>json和ajax的配合使用</p>
+				<p>json通过"{}"来标识，一个"{}"代表了一个对象，而"[]"表示标识数组，数组内部各个数据之间通过","来分割</p>
+				<p><br />url：发送请求地址</p>
+				<p><br />data：待发送key/value参数</p>
+				<p><br />callback：载入成功时回调函数</p>
+				<p><br />数据格式：不是编程语言</p>
+				<p>json可以理解为一种数据格式，而不是编程语言</p>
+				<p>分为3中简单值（字符串，布尔，数值和null），对象（表示的是一组无序的键值对儿），数组</p>
+				<p><br />通过stringify()将原生JS转化为json
+				<br />通过parse()将json转化为原生JS</p>
+			</div>
+  
+  </body>
+</html>
