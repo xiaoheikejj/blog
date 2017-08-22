@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //非构造函数的继承
+  //父对象
+  var Chinese = {
+    nation:'中国'
+  };
+  //子对象
+  var Doctor = {
+    career:'医生'
+  };
+  //子对象继承父对象
+  //1-Object()方法
+  var Doctor=object(Chinese);
+  Doctor.career='医生';
+  console.log(Doctor.nation);
+  //2-浅拷贝
+  var Doctor=extendCopy(Chinese);
+  Doctor.career='医生';
+  console.log(Doctor.nation);
+  //浅拷贝有一个问题,如果父对象的对象等于数组或者另外一个对象,实际上子对象只是获得一个内存地址
+  //而不是真正的拷贝,因此父对象有被篡改的可能
+  //因此,extendCopy()只是拷贝基本类型的数据,早期jQuery实现继承的方式
+  //3-深拷贝
+  //实现真正意义上的数组和对象的拷贝,递归调用'浅拷贝'
+  var Doctor=deepCopy(Chinese);
+  Chinese.birthPlaces=[1,2,3];
+  Doctor.birthPlaces.push(4);
+  console.log(Chinese.birthPlaces);
+  console.log(Doctor.birthPlaces);
+</script>
+</body>
+</html>
