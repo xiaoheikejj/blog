@@ -1,0 +1,11 @@
+append（）将B插入A，appendTo（）将A插入B。追加内容
+.prepend（），prependTo（）向前面添加
+.after（）向元素后面加入html代码，作为它的兄弟元素。.before（）在前面添加
+insertAfter（），insertBefore（）
+empty（）清空节点只是去除内部的html代码，本身的div元素没有被消除。remove（）消除节点消除所有东西
+detach（）只是会移除对象，display：none；在内存中还是存在的。当append之后又显示出来了
+clone（）
+replaceWith（）把被选元素替换成新的内容。将A换成B  .replaceAll（）将B换成A
+wrap（）将一个元素添加一个父元素。unwrap（）删除父元素
+wrapAll（wrappingElement）给集合中匹配的元素添加一个父结构
+wrapInner（wrappingElement）给元素集合添加一个父元素，这个父元素作为原先这个父元素的子元素
