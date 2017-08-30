@@ -1,0 +1,13 @@
+//实现ajax应用
+load()实现异步请求。load(url,data,callback).data是请求时发送的数据，callback是回调函数
+getJson(url,data,callback)用异步方式获取数据，然后进行解析
+getScript(url,callback)获取服务器端JS数据然后解析
+get(url,data,callback)用get方法向服务器发送请求，返回请求的数据
+post(url,callback)
+serialize()序列化表单元素值，表单中有name属性的元素进行序列化可以直接ajax请求
+ajax()可以返回数据，也可以发送请求并传递数值
+$.ajaxSetup(options)设置全局ajax默认选项。 options是一个对象，通过它设置ajax请求的全局选项值
+ajaxStart(function())在ajax请求发出前触发函数，ajaxStop(function())在请求结束后触发函数
+//插件
+验证表单插件validate
+
