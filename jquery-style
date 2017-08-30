@@ -1,0 +1,18 @@
+.attr()获取和设置元素的属性
+.removeAttr()移除某元素的属性
+.text()返回一个字符串，包括所有匹配元素的合并文本。.html()处理的是元素内容，。text()处理的是文本内容
+.val()主要处理表单元素的值，如input,textarea，select,读取表单内容的'value'值
+.val()获取元素集合的第一个元素的当前值，val(value)每个元素的值，val(function)返回设置值的函数。
+.addClass()只是添加样式类名到元素上，removeCalss()
+.toggleClass()添加或删除一个或多个类名，.toggleClass（className,data）,data是布尔值，用来判断样式是否应该被移除/添加
+.css()改变样式
+.css()的样式高于.addClass()
+.data(element,key,value)存数据，(element,key)静态接口，取数据，（key,value）实例接口，存数据，（key）实例接口，取数据
+removeDate（）删除接口
+//筛选选择器
+$（':first'），$（':last'）匹配第一个和最后一个元素
+$（':parent'）含子元素或者文本的元素
+$（':empty'）没有子元素或者文本的元素
+特殊选择器$(this)，var $this=$(this)
+$(dom)将dom对象加工成jquery对象，就可以调用jquery当中的方法。
+创建元素：document.createElement,设置属性：setAttribute,添加文本：innerHTML,加入文档：appendChild。
