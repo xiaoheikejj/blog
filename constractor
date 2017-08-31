@@ -1,0 +1,22 @@
+构造函数内部，this指向新生成的空对象
+所有针对this的操作都是发生在这个空对象上
+构造函数之所以是构造函数，就是这个函数通过操作空对象'构造'成它想要的样子
+new.target属性作用在函数内部，当前函数用new调用，new.target指向当前函数，否则为undefined
+实例对象生成实例对象，Object.create()
+//this
+this就是返回一个对象，返回属性和方法'当前'的对象
+this.a
+this就是代表a属性当前所在的对象
+Ⅰ this在全局环境指向window
+Ⅱ构造函数中的this指向实例对象
+Ⅲ一个对象赋值另外一个对象方法和属性
+多层this
+var foo=function （）{f1:function(){console.log(this)
+    var that=this;
+    var f2=function(){
+    console.log(this);
+    }
+}    
+}
+数组处理方法中的this，处理方法一致
+回调函数中使用this
