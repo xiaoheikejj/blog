@@ -59,3 +59,20 @@
 		</div>
 	</body>
 </html>
+Object.prototype的原型是null，null没有任何属性，原型链到此为止
+原型链的作用是读取一个对象属性时，JS引擎先找它本身的属性，找不到就找原型，找不到就原型的原型，直到最顶层的Object.prototype还没有返回undefined
+如果对象本身的属性和原型的属性重名，优先确定自己的属性
+constractor可以被所有实例对象继承
+instanceof判断一个对象在它的原型链中是否存在一个构造函数的prototype属性，返回一个布尔值
+v instanceof Ve左边是实例对象，右边是构造函数
+Object.getPrototypeOf（）返回一个对象的原型
+Object.setPrototypeOf（）为现有对象设置原型，返回新对象。传递两个参数，第一个现有对象，第二个原型对象
+Object.create()从一个实例对象生成另外一个实例对象
+Object.prototype.isPrototypeOf()判断一个对象是否是另外一个对象的原型
+_proto_是实例对象指向原型对象
+获取obj的原型对象有3种方法  obj._proto_   obj.constractor.prototype   Object.getPrototypeOf(obj)
+
+
+
+
+
