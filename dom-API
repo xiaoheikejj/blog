@@ -37,3 +37,7 @@ classList（）属性，有add（），contains（）表示列表中是否存在
 IE4最早为document对象引入readystate属性，包含2个属性，loading加载中，complete加载完成
 contains（）传递一个参数，调用contains方法是祖先，contains参数是后代返回true
 
+
+
+
+
