@@ -24,11 +24,16 @@ Element对元素标签名，子节点，特性的访问
 setAttribute（）传递两个参数。要设置的特性名和值。特性存在替换现有值
 element类型是唯一使用attributes属性的Dom节点类型，
 attributes属性包含一个NamedNodeMap。元素的每个特性都由一个attr节点表示，每个节点都保存在NamedNodeMap对象。attributes属性包含一系列节点，每个节点的nodeName就是特性的名称，nodeValue就是特性的值
-创建新元素。document.createElement()。然后将新元素用appendChild（）加入到文档中
+创建新元素。document.createElement()。参数是要创建的标签名。为新元素添加了ownerDocument属性，然后将新元素用appendChild（）加入到文档中
 元素可以有无数个子节点。元素的childNodes属性包含了它所有的子节点。
-文本节点Text，可以通关过nodeValue或者data来访问Text节点中包含的文本
+文本节点Text，可以通关过nodeValue或者data来访问Text节点中包含的文本，两个属性值相同。length属性保存节点中字符的数目
+document.createTextNode（）创建新文本节点，接受一个参数，要插入的文本。为其设置ownerDocument属性，如果在父元素中使用normalize（）方法,父元素有两个及以上的文本，会将所有文本节点合并，splitText()将文本分割
 DOM节点=>元素节点，文本节点，属性节点
 总共有12种节点类型，这些节点类型都继承自一个基类型
 DOM1级定义了一个Node接口，该接口将由DOM中所有节点类型实现，Node接口在javascript中是Node类型实现的，javascript所有节点类型都继承自Node类型，所有节点类型都共享相同的基本属性和方法
-
+querySelector（）返回匹配模式的第一个元素，querySelectorAll（）返回nodeList实例
+getElementsByClassName（）返回nodeList（）
+classList（）属性，有add（），contains（）表示列表中是否存在值，存在返回true，不存在返回false，remove(),toggle()如果列表中有给定的值，删除它，没有添加它
+IE4最早为document对象引入readystate属性，包含2个属性，loading加载中，complete加载完成
+contains（）传递一个参数，调用contains方法是祖先，contains参数是后代返回true
 
