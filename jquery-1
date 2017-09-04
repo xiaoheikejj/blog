@@ -1,1 +1,15 @@
-# xiaoheikejj.github.io
+attr（）更新和设置元素属性
+removeAttr（）删除属性
+.html（）设置或返回html内容，.text（）设置或返回文本内容
+.val（）处理表单元素的值，input，select，textarea
+.addClass（）添加类名到元素上，removeClass（），toggleClass（）
+.css（）设置或返回被选元素的一个或多个属性
+append（）被选元素结尾添加，appendTo（）
+preappend（）开头
+after（）被选元素下一位添加，before（）
+prepend（）在被选元素的开头添加，prependTo()
+insertAfter（），insertbefore（）
+删除节点empty（）不会删除元素和属性，detach（）删除元素保存属性，remove（）所有删除
+clone（）
+replaceWith（），replaceAll（）替换成新内容
+wrap（）包裹一个元素，unwrap（）不包裹
