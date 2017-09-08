@@ -71,6 +71,21 @@ Object.create()从一个实例对象生成另外一个实例对象
 Object.prototype.isPrototypeOf()判断一个对象是否是另外一个对象的原型
 _proto_是实例对象指向原型对象
 获取obj的原型对象有3种方法  obj._proto_   obj.constractor.prototype   Object.getPrototypeOf(obj)
+检测属性从实例对象还是原型对象获取用hasOwnProperty（）这个方法会让属性从实例获取的时候返回true，反则返回false
+in操作符会通过对象让对象的给定属性时返会true，不管是这个对象来自实例还是原型
+要取得对象上所有可枚举的实例属性，可以用Object.keys（），这个方法接受一个参数，返回这个参数的可枚举属性的字符串数组
+想要获得所有属性，可以用Object.getOwnPropertyNames（）
+instanceof来检测在一个构造函数中有没有prototype属性，返回布尔
+typeof返回字符串，返会类似number，object，undefined...
+构造函数模式定义实例的属性，原型模式定义实例的方法和共享属性
+定义函数的方式有两种，函数声明和函数表达式
+函数声明提升：可以把函数声明放在调用它的语句后面
+arguments.callee指向正在执行函数的指针
+匿名函数的执行环境具有全局性
+this最终指向都是调用它的那个对象，object.name和（object.name）是一样的
+
+
+
 
 
 
