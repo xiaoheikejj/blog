@@ -15,4 +15,4 @@ $（':parent'）含子元素或者文本的元素
 $（':empty'）没有子元素或者文本的元素
 特殊选择器$(this)，var $this=$(this)
 $(dom)将dom对象加工成jquery对象，就可以调用jquery当中的方法。
-创建元素：document.createElement,设置属性：setAttribute,添加文本：innerHTML,加入文档：appendChild。
+创建元素：document.createElement,设置属性：setAttribute,添加文本：innerHTML,加入文档：appendChild
