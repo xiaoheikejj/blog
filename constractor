@@ -19,4 +19,4 @@ var foo=function （）{f1:function(){console.log(this)
 }    
 }
 数组处理方法中的this，处理方法一致
-回调函数中使用this
+回调函数中使用this。
