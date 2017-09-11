@@ -2,13 +2,14 @@ charAt（）返回指定位置的字符
 charCodeAt（）
 concat（）连接2个字符串， 返回新字符串，不改变原字符串
 slice（）2个参数，起始位置，结束位置。从原字符串拿出新字符串返回，不改变原字符串
-substring（）和slice（）用法一样substr（）
-indexOf（）一个字符串在另一个字符串中第一个位置lastIndexOf（）
+substring（）和slice（）用法一样，substr（）传递两个参数，刚开始字符串位置，需要拿出来的个数
+indexOf（）一个字符串在另一个字符串中第一个位置lastIndexOf（），没有返回-1
 trim（）去除字符串两端空格，返回新字符串，不改变原字符串
 toLowerCase（）全部转成小写，toUpperCase（）全部转成大写
 localeCompare（）字符串比较大小，返回一个整数，前面大的小于0，一样的=0，后面大的<0
 match（）子字符串是否在原字符串当中，返回一个数组，没找到返回null
 search（）匹配，没找到返回-1
-splice（）分割字符串，返回一个数组
+replace（）替换
+split（）分割字符串，返回一个数组
 
 
