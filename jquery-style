@@ -18,10 +18,21 @@ $(dom)将dom对象加工成jquery对象，就可以调用jquery当中的方法�
 创建元素：document.createElement,设置属性：setAttribute,添加文本：innerHTML,加入文档：appendChild
 
 
-任何数和NaN比较都返回false
+任何数和NaN比较都返回false,任何涉及NaN的操作都返回NaN
+在isNaN（）中true转化成1，false是0
+Number()
 相等和不相等：先转换后比较，全等和不全等：比较不转换
 相等==；不相等！=
 null和undefined是相等的；不能将null和undefined转化成其他任何值
 全等操作符要两个操作数进行转化后比较；！==在两个操作数在不转化时不想等的情况下返回true
 null==undefined返回true；因为他们是类似的值
 null===undefined返回false；因为他们不是同类型的值
+
+
+浮点数值的最高进度是17位小数，所以，永远不要测试某个特定的浮点数值
+parseFloat()只能解析10进制，没有基数。可以解析后一个小数点；parseInt()反之
+只有null和undefined没有toString()方法，string中的toString()方法返回string的一个副本
+String()如果是null返回'null',如果是undefined返回'undefined'；其他数据类型调用toString()方法获得结果
+
+
+
