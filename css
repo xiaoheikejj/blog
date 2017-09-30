@@ -1,0 +1,17 @@
+块状盒子block；定义在其他盒子上的盒子，内容独占一行，对他可以设置高宽
+行内盒子inline；设置高宽无效
+inline-block行内块元素，不会另起一行；可以设置高宽
+overflow溢出
+auto:内容溢出被隐藏，显示滚动条
+hidden：溢出被阴隐藏
+visible：溢出在盒子外面
+outline外边框
+box-sizing用来计算元素的宽度和高度
+content-box
+border-box
+(这里的计算width=border+padding+内容的width)
+content-box
+元素内容区域是width；
+伪类里面:nth-child()是逐条走；:nth-of-type()是按类逐条走
+:only-child代表某个父元素的唯一一个子元素
+
