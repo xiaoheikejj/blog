@@ -1,0 +1,6 @@
+toString()方法
+此方法返回一个表示对象的字符串
+可以用来检测数据类型
+Object.prototype.toString.call（value） 
+Object的toString()被它派生的每个对象所继承
+xxx.prototype.toString = function xxString(){} 可以改变原生的toString（）方法
