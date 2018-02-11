@@ -4,3 +4,5 @@ toString()方法
 Object.prototype.toString.call（value） 
 Object的toString()被它派生的每个对象所继承
 xxx.prototype.toString = function xxString(){} 可以改变原生的toString（）方法
+Object实例方法
+Object.prototype.valueOf()返回一个对象的值；默认情况下返回对象本身
