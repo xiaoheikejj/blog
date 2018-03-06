@@ -46,3 +46,14 @@
 </div>
 </body>
 </html>
+
+
+new一个构造函数后在构造函数内部隐式创建var = {}；中间this.xx = xx；在最后隐式return this
+原始值不能加属性和方法
+包装类
+var num = 4；
+num.len = 3;
+//new Number(4).len = 3     delete
+ 
+//new Number(4).len
+console.log(num.len)
