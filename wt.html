@@ -59,3 +59,18 @@ num.len = 3;
 console.log(num.len)
 
 call()根本是改变this的指向和apply的区别是传值方式不同
+
+A instanceof B A对象的原型链上有没有B的原型
+
+function extened(Child, Parent){
+    var F = function (){};
+    Parent.prototype = F.prototype;
+    Child.prototype = new F();
+    Child.prototype.constructor = Child;
+    Child.uber = Parent.prototypel;
+}
+区分数组和对象的方法
+.constructor
+instanceof
+toString().call([]);
+hasOwnPrototy()检测到一个对象自身的属性；
