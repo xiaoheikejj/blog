@@ -74,3 +74,9 @@ function extened(Child, Parent){
 instanceof
 toString().call([]);
 hasOwnPrototy()检测到一个对象自身的属性；
+
+
+函数预编译过程 this-->window
+全局作用域中  this-->window
+call/apply可以改变this指向
+obj.func（）  func()里面的this指向obj
