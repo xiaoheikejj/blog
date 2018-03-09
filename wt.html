@@ -97,8 +97,20 @@ Array.prototype.push = function (){
 }
                                         
 splice = function (pos){
-    pos += pos > 0 ? 0 : this.length                      
+    pos += pos > 0 ? 0 : this.length;                      
 }
         
 重新定义sort
-        
+1.必须写两形参
+2.看返回值 返回值是负数 前面的数放在前面
+          为正数，后面的数在前
+          为0 不动
+arr.sort(function () {
+            return a - b
+        }) 
+ 
+ 数组乱序
+ arr.sort(function (){
+            return Math.random() - 0.5
+        })
+ 
