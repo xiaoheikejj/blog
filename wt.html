@@ -87,3 +87,18 @@ obj.func（）  func()里面的this指向obj
 2.判断是数组还是对象
 3.建立对应的数组或对象
 4.递归
+
+
+Array.prototype.push = function (){
+    for(var i = 0; i < arguments.length; i++){
+        this[this.length] = arguments[i]                                    
+    }
+    return this.length;
+}
+                                        
+splice = function (pos){
+    pos += pos > 0 ? 0 : this.length                      
+}
+        
+重新定义sort
+        
