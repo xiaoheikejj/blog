@@ -80,3 +80,10 @@ hasOwnPrototy()检测到一个对象自身的属性；
 全局作用域中  this-->window
 call/apply可以改变this指向
 obj.func（）  func()里面的this指向obj
+
+
+深拷贝
+1.判断是不是原始值  typeof
+2.判断是数组还是对象
+3.建立对应的数组或对象
+4.递归
