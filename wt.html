@@ -3,37 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-    *{
-        padding: 0;
-        margin: 0;
-        text-decoration: none;
-        list-style-type: none;
-    }
-    #box{
-        width: 1000px;
-        background-color: green;
-        margin: 0 auto;
-        position: relative;
-        height: 1000px;
-    }
-    #box>ul{
-        margin: 0 auto;
-        position: absolute;
-        top: 30px;
-        left: 50px;
-    }
-    #box>ul>li{
-        font-size: 120%;
-        font-family: '微软雅黑';
-        margin-top: 20px;
-    }
-    </style>
 </head>
 
 <body>
 <div id="box">
-
     <ul>
         <li>1.今天上课老师主要讲述的是this的指向以及函数的渲染。</li>
         <li>2.我们可以通过apply和call来改变this的指向</li>
@@ -115,4 +88,6 @@ arr.sort(function () {
         })
  
 属性要为索引（数字）属性，必须有length属性，最好加上push方法
+
+Array.prototype.splice() 通过替换或删除现有元素，或者原地添加新元素来动态改变现有数组，会改变现有数组
  
