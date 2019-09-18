@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title></title>
-	<style></style>
+<meta charset="utf-8" />
+<title></title>
+<style></style>
 </head>
 <body>
-	<h2>设计模式的例子工厂模式</h2>
-			<p>
-				function factory(name,age){
-					var obj={};
-					obj.name = name;
-					obj.age = age;
-					obj.fun = function(){
-						console.log("工厂方法");
-					}
-					return obj;
-				}
-				var student = factory("张三",10);
-			</p>
-	<p>面向对象编程思想（oop）。对象指的是单个实物的抽象，比如人（种类）。通常需要一个模板，表示某一类实物的共同特征，对象就是根据这个模板生成的。
-	构造函数就是专门生成对象的函数。java基于类，js基于构造函数和原型链。构造函数的两大特点（1.函数体内部使用了this关键字，代表对象生成的实例。2.
-		生成对象的时候，必须使用new命令，调用xx函数）</p>
-		 <p>关于Ajax</p>
-		 <P>Ajax全称是asynchronous Javascript And XML</P>
-		 <p>核心对象是XMLHTTPRequest，后台与服务器进行少量数据交换，使网页实现异步更新</p>
-		 <p>步骤如下</p>
-		 <p>1.创建新的XMLHTTPRequest对象</p>
-		 <p>2.发送Ajax请求	a.open b.send</p>
-		 <p>3.接受请求 onreadystatechange</p>
-		 <p>同源策略/同域 包括以下3点相同 域名，端口，协议</p>
-		 <p>关于try{}catch(e){处理错误}的使用</p>
-		 <p>响应时间：timeout</p>
-		 <p>Ajax的核心代码
-		 		
-		 			
-		 			var xhr;
-		 			if(window.XMLHttpRequest){
-		 				xhr = new xXMLHttpRequest();
-		 			}else{
-		 				xhr = new AActiveXObject("Microsoft.XMLHTTP");
-		 				xhr.onreadystatechange = function();
-		 				if(xhr.readyState == 4&&xhr.status == 200){
-		 					console.log(xhr.response);
-		 				}
-		 			}
-		 			xhr.open("GET/post","http://www.exmple.com/test.php",true);
-		 			xhr.send();
-		 		
-		 
-		 </p>
-		 
+<h2>设计模式的例子工厂模式</h2>
+<p>
+function factory(name,age){
+	var obj={};
+	obj.name = name;
+	obj.age = age;
+	obj.fun = function(){
+		console.log("工厂方法");
+	}
+	return obj;
+}
+var student = factory("张三",10);
+</p>
+<p>面向对象编程思想（oop）。对象指的是单个实物的抽象，比如人（种类）。通常需要一个模板，表示某一类实物的共同特征，对象就是根据这个模板生成的。
+构造函数就是专门生成对象的函数。java基于类，js基于构造函数和原型链。构造函数的两大特点（1.函数体内部使用了this关键字，代表对象生成的实例。2.
+生成对象的时候，必须使用new命令，调用xx函数）</p>
+ <p>关于Ajax</p>
+ <P>Ajax全称是asynchronous Javascript And XML</P>
+ <p>核心对象是XMLHTTPRequest，后台与服务器进行少量数据交换，使网页实现异步更新</p>
+ <p>步骤如下</p>
+ <p>1.创建新的XMLHTTPRequest对象</p>
+ <p>2.发送Ajax请求	a.open b.send</p>
+ <p>3.接受请求 onreadystatechange</p>
+ <p>同源策略/同域 包括以下3点相同 域名，端口，协议</p>
+ <p>关于try{}catch(e){处理错误}的使用</p>
+ <p>响应时间：timeout</p>
+ <p>Ajax的核心代码
+
+
+var xhr;
+if(window.XMLHttpRequest){
+	xhr = new xXMLHttpRequest();
+}else{
+	xhr = new AActiveXObject("Microsoft.XMLHTTP");
+	xhr.onreadystatechange = function();
+	if(xhr.readyState == 4&&xhr.status == 200){
+		console.log(xhr.response);
+	}
+}
+xhr.open("GET/post","http://www.exmple.com/test.php",true);
+xhr.send();
+</p>	 
 </body>		
 </html>
 解析JSON数据用eval或者JSON.parse
@@ -82,3 +79,6 @@ js执行过程
 找形参和变量声明，将变量和形参名变为AO属性值，值为undefined
 将实参值和形参统一
 在函数体里找函数声明，值赋予函数体
+
+数字 0、一个空字符串 ""、null、undefined 和 NaN 都会转换成 false。因为他们被称为 “falsy” 值。
+其他值变成 true，所以它们被称为 “truthy”。
