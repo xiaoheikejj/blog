@@ -4,7 +4,9 @@
 
 1. 音乐的播放分为3大模块
 2. 播放、暂停 | 上一曲、下一曲 | 播放模式切换 | 进度（音乐、缓存、拖放）| 音量调节 | 歌词 | 列表选择
-3. 首先确定两个时间。第一：全部时长总长度是 audio.duration; 2: audio.currentTime表示当前播放过的时间
+3. 首先确定两个时间。
+    - 全部时长总长度是 audio.duration; 
+    - audio.currentTime 表示当前播放过的时间
 4. setInterval定时器 settimeout延时器 vedio loop单曲循环 autoplay自动播放
 5. audio src为规定音频的播放路径
 6. controls poster 视频的预览图片
