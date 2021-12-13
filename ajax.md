@@ -1,5 +1,5 @@
 设计模式的例子工厂模式
-```
+``` JavaScript
 function factory(name,age){
 	var obj={};
 	obj.name = name;
