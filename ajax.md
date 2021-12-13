@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title></title>
-<style></style>
-</head>
-<body>
-<h2>设计模式的例子工厂模式</h2>
-<p>
+设计模式的例子工厂模式
 function factory(name,age){
 	var obj={};
 	obj.name = name;
@@ -36,9 +27,9 @@ var student = factory("张三",10);
 
 
 var xhr;
-if(window.XMLHttpRequest){
+if (window.XMLHttpRequest) {
 	xhr = new xXMLHttpRequest();
-}else{
+} else {
 	xhr = new AActiveXObject("Microsoft.XMLHTTP");
 	xhr.onreadystatechange = function();
 	if(xhr.readyState == 4&&xhr.status == 200){
@@ -48,8 +39,7 @@ if(window.XMLHttpRequest){
 xhr.open("GET/post","http://www.exmple.com/test.php",true);
 xhr.send();
 </p>	 
-</body>		
-</html>
+
 解析JSON数据用eval或者JSON.parse
 eval方法会解析JSON字符串当中的方法
 
