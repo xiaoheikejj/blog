@@ -1,3 +1,0 @@
-json是一种数据交换文本格式
-JSON.stringify（）将值转化为字符串，JSON.parse（）相反
-JSON.stringify（）让javascript对象转化成JSON字符串,而JSON.parse（）反之
