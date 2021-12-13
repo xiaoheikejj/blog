@@ -1,4 +1,5 @@
 设计模式的例子工厂模式
+```
 function factory(name,age){
 	var obj={};
 	obj.name = name;
@@ -9,6 +10,7 @@ function factory(name,age){
 	return obj;
 }
 var student = factory("张三",10);
+```
 </p>
 <p>面向对象编程思想（oop）。对象指的是单个实物的抽象，比如人（种类）。通常需要一个模板，表示某一类实物的共同特征，对象就是根据这个模板生成的。
 构造函数就是专门生成对象的函数。java基于类，js基于构造函数和原型链。构造函数的两大特点（1.函数体内部使用了this关键字，代表对象生成的实例。2.
